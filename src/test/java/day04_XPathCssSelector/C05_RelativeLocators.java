@@ -22,12 +22,12 @@ public class C05_RelativeLocators {
         // once uzerlerinden tarif yapacagimiz web elementlerini locate etmeliyiz
         WebElement sailor = driver.findElement(By.id("pid11_thumb"));
         WebElement boston = driver.findElement(By.id("pid6_thumb"));
-        WebElement bayAria = driver.findElement(By.id("pid8_thumb"));
+        WebElement byArea = driver.findElement(By.id("pid8_thumb"));
         WebElement nyCity = driver.findElement(By.id("pid3_thumb"));
 
         //2 ) Berlin’i  3 farkli relative locator ile locate edin
-        WebElement berlin1=driver.findElement(RelativeLocator.with(By.tagName("img")).toRightOf(boston));
-        System.out.println(berlin1.getAttribute("id"));
+        //WebElement berlin1=driver.findElement(RelativeLocator.with(By.tagName("img"))).above(sailor)
+       // WebElement berlin2 = driver.findElement(RelativeLocator.with(By.tagName("img")).toRightOf(boston).toleftOf(byArea);
         //3 ) Relative locator’larin dogru calistigini test edin
     }
 }
